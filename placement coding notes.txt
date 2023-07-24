@@ -119,7 +119,7 @@ syntaxes:-
    {
      printf("%d", ++i); //pre-increment -->first increment the value and then print the value.
      printf("%d", i++); //post-increment  -->first print the value and then increment.
-
+=================================================================================================================================
 -->FUNCTION AND RECURSION:-
 ============================
 -->
