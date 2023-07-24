@@ -1,0 +1,122 @@
+-->OPERATORS:-
+================
+-->Arithmetic operators:-
+  -------------------------
+  -->+,-,*,/,%
+-->Relational operators:-
+--------------------------
+  -->>,<,>=,<=,==,!=
+-->Logical Operators:-
+--------------------------
+  -->&&,||,!
+-------------------------
+-->Bitwise Operators:-(Mainly works with Binary numbers)
+---------------------------
+--> &(Bitwise And) , |(Bitwise or) , ^(Bitwise xor),<<(Right shift),>>(Left shift)
+-----------------------------------------------------------------------------------
+-->Assignment operators:-(To Assign a value to the variable)
+---------------------------------
+-->=, +=,-=,*=,/= , etc ..
+-------------------------------------
+=====================================================================
+-->CONTROL STATEMENTS:-
+=============================
+->simple if
+-->if-else 
+-->if-else -if else
+-->Nested if statements
+-->switch block
+syntax:-
+   ->  if(condition checking){
+         statement;
+     }
+  
+   -> if(condition checking){
+           statement;
+     }
+     else{
+         statement;
+     }
+   ->if(conditon checking){
+         statement;
+     }
+     else if(conditon checking){
+          statement;
+     }
+  ->if(condition1 checking){
+         if(condition2 checking ){
+                   statement1;
+         }
+         else{
+             statement2;
+         }
+    }
+    else{
+        statement3;
+    }
+  ->int ch=2;
+    switch(ch-->expression)
+    {
+         case 0:pritnf("statement");
+                break;
+         case 1:printf("statement2");
+                break;
+         ....
+         default:printf("default statement");
+                 break;
+    }
+====================================================================
+     
+-->LOOPING STATEMENTS:-
+==========================
+-->There Three looping statements they are for,while and do while.
+-->do while no that much important.
+syntaxes:-
+----------
+/* for(intialization,condition checking, increment or decrement)
+ {
+         statements;
+ }*/
+-->for loop is countbale loop .
+/*initialization;
+  while(conditon checking)
+  {
+    statement;
+    increment or decrement;
+  }
+-->while loop is a conditional based loop but we use for countable loop
+-->for(int i=0;i<=10;i++)
+  {
+     printf("%d ",i); //0,1,2,3,4,5,6,7,8,9,10
+  }
+-->for(int i=10;i>=1;i--)
+   { 
+      printf("%d ", i); //10,9,8,7,6,5,4,3,2,1
+   }
+-->int i=1;
+   while(i<=10){
+      printf("%d",i);
+      i++;
+   }
+-->the break and continue statements should be wirtten in the conditions only in for or while loops.
+-->for(int i=0;i<10;i++)
+   {
+     printf("%d", i);
+     if(i%4==0)
+     {
+        break;
+      }
+  }
+-->for(int i=1;i<100;)
+   {
+       printf("%d",i); // 1 1 1 1 ...
+   }
+-->The above loop execute for infinite times.
+-->for(int i=1;i<=10;)
+   {
+     printf("%d", ++i); //pre-increment -->first increment the value and then print the value.
+     printf("%d", i++); //post-increment  -->first print the value and then increment.
+
+-->FUNCTION AND RECURSION:-
+============================
+-->
