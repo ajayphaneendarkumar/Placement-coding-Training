@@ -12,8 +12,8 @@
 -------------------------
 -->Bitwise Operators:-(Mainly works with Binary numbers)
 ---------------------------
---> &(Bitwise And) , |(Bitwise or) , ^(Bitwise xor),<<(Right shift),>>(Left shift)
------------------------------------------------------------------------------------
+--> &(Bitwise And) , |(Bitwise or) , ^(Bitwise xor),>>(Right shift),<<(Left shift),~(Bitwise Not)
+------------------------------------------------------------------------------------------------------
 -->Assignment operators:-(To Assign a value to the variable)
 ---------------------------------
 -->=, +=,-=,*=,/= , etc ..
@@ -119,7 +119,59 @@ syntaxes:-
    {
      printf("%d", ++i); //pre-increment -->first increment the value and then print the value.
      printf("%d", i++); //post-increment  -->first print the value and then increment.
-=================================================================================================================================
+-->int i=0;n=10;
+   for(;;)
+   {
+      printf("%d",i);
+      i*=2;
+   }
+   -->the loop will be executed for infinite times with 0 as output.
+-->int i=1;n=10;
+   for(;;)
+  {
+    printf("%d", i); // 1 2 4 8 
+    i*=2;
+  }
+--> short unsigned int i=1;n=10;
+    for(;;)
+    {
+      if(i==0)
+      {
+       break;
+      }
+      printf("%hu" ,i);
+       i*=2;
+    }
+-->int i=1;n=100;
+   while(i<=n){
+     if(i%3==0 && i%5==0){
+         i+=1;                  -->skips the value that is divisible by both 3 and 5.
+         continue;
+      } 
+     printf("%d",i);
+      i+=1;
+   }
+-->int i=1;n=100;
+   while(i<=n){
+         if(i%3==0 && i%5==0){
+               break;               -->breaks the loop when a number divisible by both 3 and 5 and print hai .
+             }     
+             printf("%d",i);
+          i+=1;
+    }
+    printf("Hai');
+-->for(int i=1;i<=10;i++);    -->there is no relationship between for loop and the statement.
+   {
+      printf("%d " , i);   // the output will be 11.
+   }
+-->int p=7,q=3,r=6;
+   for(r=3;r<=4;r++)
+       p=(q+12)+r;
+   for(r=5;r<=6;r++)      // the ouput is 15.
+      p=(q+q)+r;
+   printf("%d " ,p+q);
+
+=================================================================================================================
 -->FUNCTION AND RECURSION:-
 ============================
 -->
