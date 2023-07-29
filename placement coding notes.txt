@@ -255,5 +255,80 @@ syntaxes:-
       scanf("%d",&n);
       func(n);
    }
+-->int func(int n){
+      if(n==0)
+          return 1;
+      else
+         return n+func(n-1);
+   }
 ---------------------------------------------------------------
-
+->STRINGS:-
+======================
+-->char array is called as strings in c programming.
+-->#include<stdio.h>
+   int main(){
+       char str1[100], str2[100];
+       scanf(" %[^\n]s", &str1);
+       scanf(" %[^\n]s", &str2);
+       printf("%s  %s",str1,str2);
+       printf("%s  %s", *str1 ,*str2); //prints the ascii value of the first character.
+   }
+-->#include<stdio.h>
+   int main()
+   {
+         char str1[100],str2[100];
+         scanf(" %[^\n]s", &str1);
+         scanf(" %[^\n]s", &str2);
+         for(int i=0;str1[i]!='\0';i++)
+          {
+              printf("%c", str2[i]);
+           }
+   }
+----------------------------------------------
+-->STRING HANDLING FUNCTIONS:-
+--------------------------------
+-->strlen(); //calculate the length of string.
+-->strrev(); //reverse the string
+-->strcat();  //used to concatenate the the two strings
+-->strcpy();  //used to copy one string to another string
+-->strcmp();  //used to compare onestring with other string.
+-->#include<stdio.h>
+   #include<string.h>
+   int main()
+   {
+         char str1[100],str2[100];
+         scanf(" %[^\n]s", &str1);
+         scanf(" %[^\n]s", &str2);
+         printf("%d %d", strlen(str1), strlen(str2));
+         printf("%d ", strcmp(str1,str2));   //if both the strings are equal then it will print "0" other wise "1".
+         printf("%s %s", strrev(str1), strrev(str2));
+         strcat(str1,str2); //ajay+chowdary == ajaychowdary
+         printf("%s ", str1);
+         str2=str1;
+         printf("%s ", str2);    
+   }
+     
+-->#include<stdio.h>
+   #include<string.h>
+    enum days{
+        mon=1,tue,wed,thru=100,fri,sat,sun;
+    }
+    int main(){
+        printf("%d ", fri); ///the output will be 101 it will continue from the last stooped value.
+-->#include<stdio.h>
+   #include<string.h>
+   
+   estruct Student{
+      int sno;
+      char name[100];
+      int marks;
+   };
+   typedef struct Student  STD;
+   int main(){
+           STD s1;
+           scanf("%d", &s1.sno);
+           scanf("%s", &s1.name);
+           scanf("%d", &s1.marks);
+           printf("%d %d %s", s1.sno,s1.marks,s1.name);
+   }
+==============================================================================
